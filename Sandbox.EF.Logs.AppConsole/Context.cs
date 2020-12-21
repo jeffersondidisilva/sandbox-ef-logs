@@ -15,7 +15,7 @@ namespace Sandbox.EF.Logs.AppConsole
                     Console.WriteLine,                          //Target delegate
                     new[] { DbLoggerCategory.Database.Name },   //Filter log messages
                     LogLevel.Information)                       //Control log level
-                .EnableSensitiveDataLogging();                  //Show parameters. Watch out with sensitive data on production environment
+                .EnableSensitiveDataLogging();                  //Show parameters. Watch out for sensitive data on production environment
         }
     }
 }
